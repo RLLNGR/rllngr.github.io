@@ -1,3 +1,8 @@
 body{
    background: cyan;
+   color: black;
+}
+
+p{
+   color: pink;
 }
