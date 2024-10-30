@@ -3,13 +3,26 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
       <link rel="stylesheet" href="style.css">
-
       <title>Portfolio</title>
    </head>
    <body>
-      <h1>Hello world!</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non commodi quisquam nihil ipsum eum earum repudiandae ratione doloremque, harum quod sit in quae ex modi veniam cupiditate, consequatur dolores eius.</p>
+      <section>
+         <div id="pop-in">
+            <div class="close" onclick="closePopin()">
+               <img src="close.svg" alt="fermer la pop in">
+            </div>
+            <div class="wrap">
+               <img src="pistache by ergocentre logo.svg" alt="pistache logo aller sur le site de pistache studio">
+               <a href="https://pistache-studio.fr/" target="_blank">en savoir plus</a>
+            </div>
+            <script>
+               function closePopin(){
+                  let popIn = document.getElementById('pop-in');
+                  popIn.remove();
+               }
+            </script>
+         </div>
+      </section>
    </body>
 </html>
